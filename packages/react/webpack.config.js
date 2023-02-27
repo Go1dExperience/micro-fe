@@ -13,7 +13,12 @@ module.exports = {
 
   devServer: {
     port: 3001,
-    historyApiFallback: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+      'Access-Control-Allow-Headers':
+        'X-Requested-With, content-type, Authorization'
+    }
   },
 
   module: {
@@ -41,11 +46,12 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "react",
+      name: "react_mf",
       filename: "remoteEntry.js",
+      library: { type: 'var', name: 'react_mf'},
       remotes: {},
       exposes: {
-        "./TextMaxline": "./src/atoms/TextMaxline"
+        "./TextInput": "./src/atoms/TextInput"
       },
       shared: {
         ...deps,
@@ -56,6 +62,10 @@ module.exports = {
         "react-dom": {
           singleton: true,
           requiredVersion: deps["react-dom"],
+        },
+        "@mui/material": {
+          singleton: true,
+          requiredVersion: deps["@mui/material"],
         },
       },
     }),
