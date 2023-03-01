@@ -6,7 +6,8 @@
     "build:dev": "webpack --mode development",
     "build:start": "cd dist && PORT=3001 npx serve",
     "start": "webpack serve --open --mode development",
-    "start:live": "webpack serve --open --mode development --live-reload --hot"
+    "start:live": "webpack serve --open --mode development --live-reload --hot",
+    "start:dev": "webpack-dev-server --open --config webpack.config.js"
   },
   "license": "MIT",
   "devDependencies": {
@@ -23,7 +24,7 @@
     "style-loader": "^3.3.0",
     "webpack": "^5.57.1",
     "webpack-cli": "^4.9.0",
-    "webpack-dev-server": "^4.3.1"
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.13.10",
@@ -34,9 +35,12 @@
     "@mui/icons-material": "^5.11.9",
     "@mui/lab": "^5.0.0-alpha.120",
     "@mui/material": "^5.11.9",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "@mui/x-data-grid": "^5.17.25",
+    "chart.js": "^4.2.1",
     "jsonwebtoken": "9.0.0",
-    "moment": "2.29.4"
+    "moment": "2.29.4",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^17.0.2"
   }
 }

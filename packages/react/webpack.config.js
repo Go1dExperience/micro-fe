@@ -1,10 +1,12 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require('path')
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 
 const deps = require("./package.json").dependencies;
 module.exports = {
+  mode: 'development',
   output: {
-    publicPath: "http://localhost:3001/",
+    publicPath: "/",
   },
 
   resolve: {
@@ -13,6 +15,9 @@ module.exports = {
 
   devServer: {
     port: 3001,
+    compress: true,
+    hot: false,
+    liveReload: true,
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',

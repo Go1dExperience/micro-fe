@@ -1,0 +1,34 @@
+.table-header {
+  background: #1e2e7f;
+  color: white;
+  border-left: 1px solid rgba(112, 112, 112, 0.3);
+  border-right: 1px solid rgba(112, 112, 112, 0.3);
+}
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: 700 !important;
+  color: white;
+}
+.MuiDataGrid-columnSeparator {
+  height: 100%;
+}
+.MuiDataGrid-columnHeaderDraggableContainer {
+  background: #1e2e7f;
+}
+.MuiDataGrid-columnHeaderTitleContainer
+  > .MuiDataGrid-columnHeaderTitleContainerContent
+  > span.PrivateSwitchBase-root.MuiDataGrid-checkboxInput {
+  color: #ffffff !important;
+}
+.MuiDataGrid-columnSeparator {
+  display: none !important;
+}
+.MuiDataGrid-cell {
+  border-right: 1px solid rgba(112, 112, 112, 0.3);
+}
+.MuiDataGrid-row:nth-of-type(even) {
+  background: #f4f7f9;
+}
+.MuiSelect-select.MuiInputBase-input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

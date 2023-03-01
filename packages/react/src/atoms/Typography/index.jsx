@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import React from 'react';
 
 const customStyles = {
   body4: { fontSize: "14px", letterSpacing: "0.02px", lineHeight: "18px" },
