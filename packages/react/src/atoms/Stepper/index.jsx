@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Stepper from "@mui/material/Stepper";
 import Box from "@mui/material/Box";
 import { Step, StepLabel, Typography, Button } from "@mui/material";
+import './index.css'
 
 const steps = ["Enter/Upload IP Details", "Confirm and Save"];
 const StepperCustom = () => {

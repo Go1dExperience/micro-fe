@@ -1,0 +1,20 @@
+.MuiStepLabel-iconContainer .MuiSvgIcon-root {
+  width: 40px;
+  height: 40px;
+}
+.MuiStepLabel-iconContainer .MuiSvgIcon-root circle {
+  color: #1e2e7f !important;
+}
+.MuiStepLabel-iconContainer.Mui-disabled .MuiSvgIcon-root {
+  border: 1px solid #7c7b7b;
+  border-radius: 50%;
+}
+.MuiStepLabel-iconContainer.Mui-disabled .MuiSvgIcon-root circle {
+  color: transparent !important;
+}
+.MuiStepLabel-iconContainer.Mui-disabled .MuiSvgIcon-root .MuiStepIcon-text {
+  fill: #7c7b7b;
+}
+.MuiStepLabel-iconContainer.Mui-completed .MuiSvgIcon-root {
+  color: #1e2e7f;
+}

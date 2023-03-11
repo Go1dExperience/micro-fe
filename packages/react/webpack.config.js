@@ -6,7 +6,7 @@ const deps = require("./package.json").dependencies;
 module.exports = {
   mode: 'development',
   output: {
-    publicPath: "/",
+    publicPath: "http://localhost:3001/"
   },
 
   resolve: {

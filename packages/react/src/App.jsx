@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Chart } from "./atoms/Chart";
 import InfoCard from "./atoms/InfoCard";
 import Stepper from "./atoms/Stepper";
-import Table from "./atoms/Table";
+import { Table, HeadlessTable } from "./atoms/Table";
 import TextInput from "./atoms/TextInput";
 import TextMaxLine from "./atoms/TextMaxline";
 import "./index.css";
@@ -17,7 +17,8 @@ const App = () => (
       deserunt.
     </TextMaxLine>
     <TextInput variant="outlined" label="Input" /> */}
-    <Table />
+    <TextInput variant="outlined" label="Input" />
+    {/* <Table />
     <Chart />
     <InfoCard
       title="Total IPs"
@@ -26,7 +27,7 @@ const App = () => (
       canViewAll
       canAddNew
     />
-    <Stepper />
+    <Stepper /> */}
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
